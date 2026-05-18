@@ -39,7 +39,7 @@ sensor_names = ['T2', # total temperature at fan inlet
 # options to visualize the datadrame
 col_names =  index_names + operational_condition_names + sensor_names
 
-df_train = pd.read_csv(r'C:\.....\train_FD001.txt' ,  sep = ' ' , names=col_names, index_col = False,  usecols=range(len(col_names))) 
+df_train = pd.read_csv('train_FD001.txt' ,  sep = ' ' , names=col_names, index_col = False,  usecols=range(len(col_names))) 
 
 
-df_test = pd.read_csv(r'C:\.....\test_FD001.txt' , sep=' ' , names= col_names, index_col = False,  usecols=range(len(col_names)))
+df_test = pd.read_csv('test_FD001.txt' , sep=' ' , names= col_names, index_col = False,  usecols=range(len(col_names)))
